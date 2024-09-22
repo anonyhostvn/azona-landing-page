@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aozora Contact</title>
+    <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <link rel="stylesheet" href="responsive.css">
+</head>
+    <body>
+<!-- Đây là header -->
+<div class="header">
+    <a href="index.html" class="header-logo">
+              <img src="main_logo_final1.png" alt="Logo">
+              <div style="display: flex; flex-direction: column;">
+                  <b style="font-size: 30px;">アオゾラ</b>
+                   <b style="font-size: 12px; margin-bottom: 5px;margin-top:-10px; ">Technology and Service</b>
+              </div>
+                   
+          </a>
+          <ul class="heading-menu">
+              <li><a href="aboutus.html">会社概要</a></li>
+              <li><a href="">サービス</a>
+                 <ul class="sub-menu">
+                  <li><a href="webdevelopment.html">ウェブ開発</a></li>
+                  <li><a href="ittraining.html">トレーニング</a></li>
+                  <li><a href="travelsupport.html">観光サービス</a></li>
+                 </ul>
+              </li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+  <img style="height:100%" src="Layer_1.jpg" alt="">
+<!-- Đây là nút bấm responsive cho heading-menu -->
+<i class="fa-solid fa-bars menu-button" style="display: none"></i>
+<ul id="sub-menu" style="display: none">
+  <li><a href="aboutus.html">会社概要</a></li>
+  <li><a href="webdevelopment.html">ウェブ開発</a></li>
+  <li><a href="ittraining.html">トレーニング</a></li>
+  <li><a href="travelsupport.html">観光サービス</a></li>
+  <li><a href="faq.html">FAQ</a></li>
+  <li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+  </div>
+<!-- Đây là phần thân -->
+  <div style="width: 100vw; display:flex; flex-direction:row ;justify-content: center; align-items: flex-start;">
+
+<!--Cách 1: HIỂN THỊ THÔNG BÁO DẠNG POUPUP -->
+<script type="text/javascript">
+    var submitted=false;
+</script>
+<iframe id="hidden_iframe"  name="hidden_iframe" onload="if(submitted){alert('Bạn đã gửi thông tin thành công tới hệ thống!');}" style="display: none;"></iframe>
+
+    <form class="bang-dang-ki" onsubmit="submitted=true;" target="hidden_iframe" action="https://script.google.com/macros/s/AKfycbyYG8jctgcTgAk50Lo-XYeErepZ59JxUREI86XEIA8pnGOqOFL-8DlSAH-0fKxg0dm5/exec" method="GET" role="form">
+        <b>ご連絡させていただきます</b>
+        <p style="  color: #7A7474; margin: 5px 0;">サービスを予約したい場合、または Aozora についてご不明な点がございましたら、ぜひお知らせください!</p>
+        <div>
+            <div>
+                <p>名前(*):</p>
+                <input type="text" name="name" class="write"  required="" placeholder="Yamada" dir="auto">
+            </div>
+            <div>
+                <p>Email(*):</p>
+                <input type="email" name="email" class="write" required="" placeholder="Ex: abc@gmail.com" dir="auto" >
+            </div>
+        </div>
+        <div>
+            <div>
+                <p>会社名(*):</p>
+                <input type="text" name="sdt" class="write" placeholder="Vd: 0123456..." dir="auto" >
+            </div>
+            <div>
+                <p>興味のあるサービス(*):</p>
+                <input type="text" name="category" list="category" class="write" dir="auto" >
+                    <datalist id="category">
+                    <option value="ウェブ開発">
+                    <option value="観光サービス">
+                    <option value="トレーニング">
+                    </datalist>
+            </div>
+        </div>
+        <p>私たちへの質問:</p>
+        <input type="text" name="comment" class="write" style="height: 108px; text-align: left;" dir="auto" >
+       
+        <div class="bang-infor">
+          <p style="font-size: 35px; margin: 20px 20px">Pick your own destination</p>
+  <p>Ha Noi ハノイ</p>
+          <div class="tour" style="gap: 8px 10px;">
+           <input type="text" class="places" id="hoguom" name="hoguom" value="Hồ Gươm" maxlength="0"> 
+            <input type="text" class="places" id="phoco" name="phoco" value="Phố Cổ" maxlength="0">  
+            <input type="text" class="places" id="chuamotcot" name="chuamotcot" value="Chùa Một Cột" maxlength="0">
+            <input type="text" class="places" id="langgombattrang" name="langgombattrang" value="Làng Gốm Bát Tràng" maxlength="0"> 
+            <input type="text" class="places" id="langbac" name="langbac" value="Lăng Bác" maxlength="0"> 
+            <input type="text" class="places" id="vanmieu" name="vanmieu" value="Văn Miếu" maxlength="0">
+            <input type="text" class="places" id="hotay" name="hotay" value="Hồ Tây" maxlength="0">  
+            <input type="text" class="places" id="denngocson" name="denngocson" value="Đền Ngọc Sơn" maxlength="0">
+            <input type="text" class="places" id="chuahuong" name="chuahuong" value="Chùa Hương" maxlength="0"> 
+          </div>
+  <p>Ha Long ハロン</p>
+  <div class="tour" style="gap: 8px 10px">
+    <input type="text" class="places" id="vinhhalong" name="vinhhalong" value="Vịnh Hạ Long" maxlength="0"> 
+    <input type="text" class="places" id="baotangquangninh" name="baotangquangninh" value="Bảo Tàng Quảng Ninh" maxlength="0"> 
+    <input type="text" class="places" id="chohaisan" name="chohaisan" value="Chợ Hải Sản" maxlength="0">  
+    <input type="text" class="places" id="sunworld" name="sunworld" value="Sun World Hạ Long" maxlength="0">  
+    <input type="text" class="places" id="captreo" name="captreo" value="Cáp Treo" maxlength="0">  
+  </div>
+  
+  <p>Ninh Binh ニンビン</p>
+  <div class="tour" style="gap:8px 10px">
+    <input type="text" class="places" id="tamcocbichdong" name="tamcocbichdong" value="Tam Cốc Bích Động" maxlength="0">
+    <input type="text" class="places" id="chuabaidinh" name="chuabaidinh" value="Chùa Bái Đính" maxlength="0">  
+    <input type="text" class="places" id="trangan" name="trangan" value="Tràng An" maxlength="0">  
+  </div>
+  <p>Da Nang ダナン</p>
+  <div class="tour" style="gap: 8px 10px">
+    <input type="text" class="places" id="caurong" name="caurong" value="Cầu Rồng" maxlength="0">
+    <input type="text" class="places" id="bandaosontra" name="bandaosontra" value="Bán Đảo Sơn Trà" maxlength="0">    
+  </div>
+  
+      </div> <input type="submit" id="dang-ki-button" name="submit" value="送信" >
+        </form>
+  </div>  
+  <div class="footer" style="bottom: -400px">
+    <img src="main_logo_final1.png" alt="">
+    <b>アオゾラ ツーリズム・アンド・サービス株式会社</b>
+    <div style="display: flex; flex-direction: row;width:100%; justify-content: space-around; align-items: flex-start;">
+      <div>
+        <b>会社のソーシャル</b>
+        <div class="social-icon">
+         <a href=""><img src="facebook.png" alt="facebook icon"></a>
+         <a href=""><img src="instagram.png" alt="instagram icon"></a>
+        </div>
+      </div>
+      <div>
+        <b>当社のサービス</b>
+        <a href="webdevelopment.html">ウェブ開発</a>
+        <a href="ittraining.html">観光サービス</a>
+        <a href="travelsupport.html">トレーニング</a>
+      </div>
+      <div>
+        <p>日本支社: 080-3593-8999</p>
+        <p>ベトナム: 0869-468-535</p>
+        <p>Email: congticongnghevadulich@gmail.com </p>
+        <p>郵便番号: 232-0033</p>
+        <p>住所: 神奈川県横浜市南区中村町４丁目273-3</p>
+        <p>営業時間: 月曜日～土曜日</p>
+      </div>
+    </div>
+   </div>
+<script src="index.js"></script> 
+<script src="ani.js"></script> 
+    </body>
+</html>
